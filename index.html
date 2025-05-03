@@ -78,11 +78,29 @@
 
         /* Header Section */
         .header {
-            text-align: center;
-            padding: 4rem 1rem;
-            border-bottom: 3px solid #E1306C;
-            margin-bottom: 3rem;
-        }
+      background: rgba(0, 0, 0, 0.9);
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-icon {
+      font-size: 28px;
+      cursor: pointer;
+      color: var(--light);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--primary);
+      animation: glow 1.5s infinite alternate;
+    }
 
         /* Content Sections */
         .article-section {
